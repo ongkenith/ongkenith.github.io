@@ -12,6 +12,10 @@ h2 {
     text-align: center;
 }
 
+video {
+    align-items: center;
+}
+
 .mainframe {
     max-width: 900px;
     background-color: #ffffff;
@@ -20,4 +24,10 @@ h2 {
     border-radius: 5px;
     border: 2px solid #444444;
     position:relative;
+}
+
+.bio_info {
+    display: block;
+    max-width: 750px;
+    border: 2px solid black;
 }
