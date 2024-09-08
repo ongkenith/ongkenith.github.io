@@ -4,29 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="index.css" rel="stylesheet">
+
+    <!-- BootStrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
     
 <body>
-        <div class="mainframe">
-            <header>
-                <h1>Ong Kenith</h1>
-            </header>
-            <main>
-                <h2>
-                    My Favourite Travel Destination
-                </h2>
-                <video width="500" height="400" class="videoframe" autoplay muted>
-                    <source src="videos/index_video1.mp4" alt="Video of Hokkaido in Winter">
-                </video>
-                <h2>
-                    About Me
-                </h2>
-                <p class="bio_info">
-                    Current Year 2 undergraduate studying Information Systems at Singapore Management University (SMU). I love Wushu, its culture and many performance routines I learn, that I have been mastering this Chinese martial arts craft for more than 10 years. <br><br>
-                    As seen above, my favourite travel destination is Hokkaido, Japan, especially during winter time. The snowy scenary and cold weather is amazing and something not possible in Singapore.
-                </p>
-            </main>
+    <!-- Nav Bar -->
+    <div class="container-fluid my-1 sticky-top">
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+      </nav>
+    </div>
+
+    <div class="container-lg bag-body border border-dark py-2">
+        <div>
+            <h2 class="text-center">Ong Kenith</h2>
         </div>
+        <main>
+
+        <div class="container py-2 my-2">
+            <h3 class="text-center">
+                My Favourite Travel Destination - Hokkaido
+            </h3>
+            <video width="100%" class="px-2" autoplay muted>
+                <source src="videos/index_video1.mp4" alt="Video of Hokkaido in Winter">
+            </video>
+            <p class="text-center">Video taken from visitjapan from Youtube</p>
+        </div>
+        <br>
+        <div class="container">
+            <div>
+                <h4 class="text-center px-3 fs-5">
+                    Some photos from my last trip to Hokkaido
+                </h4>
+            </div>
+
+            <div id="carouselExample" class="carousel slide border border-1 p-1 my-2">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="photos/index1.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="photos/index3.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item"></div>
+                        <img src="photos/index4.jpg" class="img-fluid" alt="...">
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+            <div class="container py-2">
+            <h3 class="text-center">
+                About Me
+            </h3>
+            <p class="border border-dark-subtle px-3 fs-5">
+                Current Year 2 undergraduate studying Information Systems at Singapore Management University (SMU). I love Wushu, its culture and many performance routines I learn, that I have been mastering this Chinese martial arts craft for more than 10 years. <br><br>
+                As seen above, my favourite travel destination is Hokkaido, Japan, especially during winter time. The snowy scenary and cold weather is amazing and something not possible in Singapore.
+            </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
