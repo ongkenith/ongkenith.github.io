@@ -1,6 +1,6 @@
 /* Print Navigation Top Bar */
 let nav_bar_contents = 
-`<div id='nav_bar' class="container-fluid my-1 sticky-top">
+`<div id='nav_bar' class="container-fluid py-1 sticky-top">
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
