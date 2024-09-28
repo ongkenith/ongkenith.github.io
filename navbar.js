@@ -2,7 +2,7 @@ function new_navbar() {
     // Function that creates Navbar based on navbar_contents object modification
     const navbar_contents = {
         "content1" : {"name" : "Home", "href_link" : "index.html", "status" : true},
-        "content2" : {"name" : "Projects", "href_link" : "project.html", "status" : true},
+        "content2" : {"name" : "Projects", "href_link" : "projects.html", "status" : true},
         "content3" : {"name" : "Contact", "href_link" : "#", "status" : false}
     };
 
