@@ -10,73 +10,78 @@
 
 </head>
     
-<body onload="new_navbar()">
+<body>
     <!-- Nav Bar -->
     <div id='navbar'></div>
     
-    <div class="container-lg" style="padding-top: 70px;">
-        <div>
-            <h2 class="text-center">Ong Kenith</h2>
+    <!--Part 1: Intro-->
+    <div class="container-fluid p-1" style="background-image: linear-gradient(to right, cyan, yellow);">
+        <div class="row m-2">
+            <div class="col-md-1"><!--For nice spacing--></div>
+            <div class="col-md-9 py-2">
+                <h2>Hi, My name is Kenith. Welcome to my website!</h2>
+            </div>
+            <div class="col-md-2"><!--For nice spacing--></div>
         </div>
-        <main>
-
-        <div class="container py-2 my-2">
-            <h3 class="text-center">
-                My Favourite Travel Destination - Hokkaido
-            </h3>
-            <video width="100%" class="px-2" autoplay muted>
-                <source src="videos/index_video1.mp4" alt="Video of Hokkaido in Winter">
-            </video>
-            <p class="text-center">Video taken from visitjapan from Youtube</p>
+        <div class="row m-2">
+            <div class="col-md-1"><!--For nice spacing--></div>
+            <div class="col-md-4">
+                <img src="" alt="picture_of_me">
+            </div>
+            <div class="col-md-6 py-2">
+                <span>
+                    Currently am Year 2 undergraduate studying Information Systems at Singapore Management University (SMU).<br> <br>
+                    I am always looking to learn new knowledge to continuously improve myself, expand and broaden my expertise within my field.
+                </span>
+            </div>
         </div>
-        <br>
-        <div class="container">
-            <div>
-                <h4 class="text-center px-3 fs-5">
-                    Some photos from my last trip to Hokkaido
-                </h4>
-            </div>
+        <div class="row m-2 justify-content-center">
+            <div class="col-md-4 mx-auto"><button type="button" class="btn btn-primary" onclick="error_alert()">Contact Me</button></div>
+        </div>
+    </div>
 
-            <div id="carouselExample" class="carousel slide border border-1 p-1 my-2">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="photos/index1.jpg" class="img-fluid" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="photos/index3.jpg" class="img-fluid" alt="...">
-                    </div>
-                    <div class="carousel-item"></div>
-                        <img src="photos/index4.jpg" class="img-fluid" alt="...">
-                    </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                </div>
+    <!--For nice spacing--><br><br>
+
+    <!--Part 2: My most recen trip-->
+    <div class="container-fluid p-1">
+        <div class="row m-2">
+            <div class="col-7 align-content-center">
+                <h4>My most recent solo trip</h4>
+                <br>
+                <span>
+                    On Feburary 2023, I embarked on my first solo trip to Hokkaido, Japan. The goals of this trip were
+                    <ol>
+                    <li>To step out of my comfort zone and try something new</li>
+                    <li>Want to do some soul searching on what I like/dislike</li>
+                    <li>Explore more of what the winter season in Japan offered</li>
+                    </ol>
+                </span>
             </div>
-            <div class="container py-2">
-            <h3 class="text-center">
-                About Me
-            </h3>
-            <p class="border border-dark-subtle px-3 fs-5">
-                Current Year 2 undergraduate studying Information Systems at Singapore Management University (SMU). I love Wushu, its culture and many performance routines I learn, that I have been mastering this Chinese martial arts craft for more than 10 years. <br><br>
-                As seen above, my favourite travel destination is Hokkaido, Japan, especially during winter time. The snowy scenary and cold weather is amazing and something not possible in Singapore.
-            </p>
+            <div class="col-5">
+                <!--Carousel of Images-->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner" id="carousel_inner"></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
-        </main>
+        </div>
     </div>
 
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <!-- Vue.JS CDN-->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
     
     <!-- Own JS Script -->
     <script src="navbar.js"></script>
+    <script src="carousel_index.js"></script>
 </body>
 </html>

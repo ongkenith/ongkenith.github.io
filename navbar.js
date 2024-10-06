@@ -3,7 +3,8 @@ function new_navbar() {
     const navbar_contents = {
         "content1" : {"name" : "Home", "href_link" : "index.html", "status" : true},
         "content2" : {"name" : "Projects", "href_link" : "projects.html", "status" : true},
-        "content3" : {"name" : "Contact", "href_link" : "#", "status" : false}
+        "content3" : {"name" : "Achievements", "href_link" : "#", "status" : false},
+        "content4" : {"name" : "Contact", "href_link" : "#", "status" : false}
     };
 
     /* Get the section of Navbar */
@@ -11,7 +12,7 @@ function new_navbar() {
     let navbar_structure = document.createElement("nav");
 
     /* Add Bootstrap */
-    navbar_structure.setAttribute("class", "navbar navbar-expand-md py-0 bg-dark fixed-top");
+    navbar_structure.setAttribute("class", "navbar navbar-expand-md py-1 text-white bg-dark");
     navbar_structure.setAttribute("data-bs-theme","dark");
     navbar_structure.innerHTML = 
     `<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -56,3 +57,6 @@ function error_alert() {
     /* For any buttons not suppose to be working right now */
     alert("Coming soon!")
 }
+
+// Call all needed functions
+new_navbar();
