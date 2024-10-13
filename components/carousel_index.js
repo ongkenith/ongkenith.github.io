@@ -1,4 +1,4 @@
-function carousel_img() {
+function carouselImg() {
     //console.log("Start Carousel");
     const imgs = [
         {"src" : "photos/index1.jpg", "alt" : "mountain"},
@@ -38,4 +38,4 @@ function carousel_img() {
 }
 
 // Call all needed functions
-carousel_img();
+carouselImg();
