@@ -2,7 +2,7 @@ function populateProjCards() {
     const cards = [
         {"name": "Justin Bieber Fan Page", "description": "A quick project by prompting AI to create a webpage for Justin Bieber.","img": "photos/justin/justin1.jpg", "href" : "https://ongkenith.github.io/justin.html"
         },
-        {"name": "HeartCode Mentor Training", "description": "Learning how to use Next.js framework during mentor training","img": "photos/heartcodeTraining", "href" : "https://heartcode-training-try.vercel.app/"
+        {"name": "HeartCode Mentor Training", "description": "Learning how to use Next.js framework during mentor training","img": "photos/heartcodeTraining.jpg", "href" : "https://heartcode-training-try.vercel.app/"
         }
     ];
 
